@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500;1,700;1,900&display=swap');
+* {
+
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.menu{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+}
+.couches{
+    display: inline-block;  
+    width: 44%;
+    text-align: right;
+}
+.chair{
+    display: inline-block;
+    width: 11%;
+    text-align: center;
+}
+.dining{
+display: inline-block;
+width: 44%;
+text-align: left;
+}
+.quote{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 35px;
+}
+.option{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.showcase{
+    width: 84%;
+    margin: auto;
+}
+.image{
+    display: inline-block;
+    width: 33%;
+    padding: 12px;
+}
+.description{
+    width: 48%;
+    color: rgb(98, 98, 98);
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 20px;
+}
+a{
+    color: rgb(75, 75, 219);
+    font-size: 23px;
+    text-decoration: none
+}
+.details{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.credentials{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input{
+    width: 16%;
+    padding: 10px;
+    border: 0.3px solid black;
+}
+select{
+    width: 16%;
+    padding: 20px;
+    border: 0.3px solid black;
+    text-decoration: none;
+    background-color: white;
+    color: gray;
+}
