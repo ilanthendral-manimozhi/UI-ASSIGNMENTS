@@ -1,3 +1,6 @@
+// 1. Use object and functions for this exercise
+// 2. add comments for code
+
 let num1 = 89;
 let num2 = 40;
 let operation = { add: "+", sub: "-", mul: "*", div: "/" };
