@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500;1,700;1,900&display=swap');
+
+* {
+
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+img {
+    width: 100%;
+    margin: 0 0;
+}
+
+body {
+    background-image: url("../assets/images/background-image.png");
+    background-size: cover;
+}
+
+.background {
+    position: absolute;
+    background-image: url("../assets/images/background-image.png");
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    position: absolute;
+    background-color: #000;
+    width: 5%;
+    z-index: 1;
+}
+
+.menu i {
+    color: white;
+    padding: 30px;
+    font-size: 34px;
+
+}
+
+.year h1 {
+    display: inline-block;
+    font-size: 110px;
+
+}
+
+.year h2 {
+    display: inline-block;
+    font-size: 40px;
+}
+
+header {
+    padding: 40px 0 0;
+
+}
+
+.name {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 37%;
+    right: 35%;
+    font-size: 46px;
+}
+
+.year {
+    transform: rotate(270deg);
+    position: absolute;
+    left: 80%;
+    right: -150px;
+    top: 40px;
+    z-index: 1;
+}
+
+.options {
+    position: absolute;
+    margin-top: 70px;
+    margin-right: 30px;
+    padding: 30px;
+    background-color: black;
+    width: 16%;
+    border-radius: 25px;
+    left: -280px;
+    transition: left 3s;
+    transition-delay: 1s;
+    z-index: 1;
+}
+
+.options a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 23px;
+}
+
+.options a:hover {
+    background-color: #ddd;
+}
+
+.menu:hover+.options {
+    display: block;
+    left: -18px;
+
+}
+
+.hat-icon {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+
+}
+
+.quote {
+    position: absolute;
+    font-size: 58px;
+    width: 50%;
+    top: 70%;
+    left: 37%;
+    z-index: 1;
+
+
+}
+
+.quote p {
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 144px;
+}
+.facebook{
+    display: inline;
+    padding: 5px;
+}
+.twitter{
+    display: inline;
+    padding: 5px;
+}
+.social-media{
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left:93%;
+    top:93%;
+    font-size: 35px;
+
+}
