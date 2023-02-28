@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1eaf4;
+    animation: bg 5s linear 2s infinite alternate;
+    background-image: linear-gradient( #d07ef4, #f1eaf4,  #ae32e2);
+}
+
+.floor {
+    position: absolute;
+    border: 5px solid #000;
+    width: 35%;
+    top: 50%;
+    right: 30%;
+}
+
+.small-candle {
+    position: absolute;
+    border: 4px solid #000;
+    border-radius: 10%;
+    width: 100px;
+    height: 200px;
+    top: 30%;
+    left: 42%;
+    background-color: #f7e9c9;
+    background-image: linear-gradient(#f2dead,#f1c55e, #f0af17);
+}
+
+.large-candle {
+    position: absolute;
+    border: 4px solid #000;
+    border-radius: 10%;
+    width: 100px;
+    height: 280px;
+    top: 22%;
+    left: 54%;
+    background-color: rgb(247, 233, 201);
+    background-image: linear-gradient(#f2dead,#f1c55e, #f0af17);
+}
+
+.wick {
+    position: absolute;
+    border: 5px solid #000;
+    height: 35px;
+    top: -35px;
+    right: 43%;
+}
+
+.fire {
+    position: absolute;
+    width: 30px;
+    height: 34px;
+    top: -67px;
+    right: 33%;
+    background-color: 	#201701;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transition: width 2s, height 4s;
+    animation: light 5s linear 2s infinite alternate;
+}
+
+@keyframes bg {
+    75% {
+        background-color: 	#12011a;
+    }
+}
+
+@keyframes light {
+    0% {
+        background-color: rgb(32, 23, 1);
+    }
+
+    25% {
+        background-color: rgb(245, 186, 75)
+    }
+
+    50% {
+        background-color: rgb(245, 186, 75);
+    }
+
+    75% {
+        background-color: rgb(240, 142, 30);
+    }
+
+    100% {
+        background-color: rgb(241, 133, 38);
+    }
+}
+
+.eye {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 2px #000;
+    background-color: #ffffff;
+    height: 32px;
+    width: 26px;
+    top: 40px;
+    left: 60px;
+}
+
+.other-eye {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 2px #000;
+    background-color: #ffffff;
+    height: 32px;
+    width: 26px;
+    top: 40px;
+    left: 40px;
+}
+
+.iris {
+    border: solid 3px #000;
+    background-color: #000;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+}
+
+.fire:hover {
+    width: 40px;
+    height: 50px;
+}
