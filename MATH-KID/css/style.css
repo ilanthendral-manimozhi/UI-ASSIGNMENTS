@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+/*Header*/
+header {
+    color: #000000;
+    background-color: #b5df91;
+    font-weight: 700;
+    padding: 25px;
+    font-size: 20px;
+}
+/*Main*/
+main {
+    margin: 25% 0 30% 40%;
+}
+#section1 {
+    width: 40%;
+    top: 35%;
+    left: 30%;
+    position: absolute;
+}
+
+#section2 {
+    width: 40%;
+    top: 38%;
+    left: 30%;
+    position: absolute;
+}
+
+#section3 {
+    width: 40%;
+    top: 25%;
+    left: 30%;
+    position: absolute;
+}
+/*Shapes*/
+#shape{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    }
+
+#circle {
+    width: 150px;
+    height: 150px;
+    background: #43967f;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+#square {
+
+    width: 150px;
+    height: 150px;
+    background: #e0e0e0;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid #f3afda;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tag-line {
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+}
+
+.get-input,
+#requirement {
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+
+.web-name {
+    display: inline-block;
+    width: 49%;
+
+}
+#cal-val{
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 30px 70px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.app-name {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+
+#shapes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+.item {
+    flex-basis: 33%;
+}
+
+#tick1, #tick2, #tick3 {
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    display: none;
+}
+/*Button*/
+#next-button {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    display: none;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 70px;
+    border-radius: 3px;
+    margin-left: 33%;
+    cursor: pointer;
+}
+
+#calculate,#star-again {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 50px;
+    border-radius: 3px;
+    margin-left: 33%;
+    cursor: pointer;
+}
+
+#circle > #tick1 {
+    top: 39px;
+    left: 34px;
+}
+#square > #tick3 {
+    top: 39px;
+    left: 34px;
+}
+#triangle > #tick2{
+    top: 49px;
+    right: -29px;
+}
+#cal_val {
+    color: #ffffff;
+}
+.data{
+    margin-left:90px;
+    margin-right:90px;
+    margin-bottom: 70px;
+}
+#row1,
+#row2,
+#row3 {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.shape-name{
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.measurement,
+.formula, .result {
+    text-align: left;
+    font-size: 18px;
+    padding: 15px;
+}
+.measurement{
+    background-color: #2b60cb;
+    flex-basis: 39%;
+}
+.formula{
+    background-color: #4a5c7b;
+    flex-basis: 30%;
+}
+.result{
+    background-color: #4b86f7 ;
+    flex-basis: 30%;
+}
+/*Footer*/
+footer{
+    padding: 15px;
+    background: #e0e0e0;
+    margin:52% 0 0;
+}
