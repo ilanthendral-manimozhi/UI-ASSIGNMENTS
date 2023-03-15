@@ -1,0 +1,227 @@
+$blackcolor: #000;
+$whitecolor: #fff;
+$bluecolor: #5b8dda;
+$greycolor: #cecece;
+$greencolor: #c3e891;
+
+@mixin flexProperty {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500;1,700;1,900&display=swap');
+
+* {
+
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    margin: 0 0;
+}
+
+body {
+    background-color: $blackcolor;
+}
+
+/*header*/
+header {
+    @include flexProperty;
+    padding: 20px 40px 90px 40px;
+    justify-content: center;
+
+    .mail-id {
+        @include flexProperty;
+        flex-basis: 100%;
+        flex-flow: row-reverse;
+        margin-bottom: 60px;
+        font-size: 34px;
+
+        h6 {
+            color: $whitecolor;
+        }
+    }
+
+    div {
+        .name {
+            color: $whitecolor;
+            font-size: 60px;
+            text-align: center;
+            margin-bottom: 15px;
+
+            h1 {
+                text-align: center;
+            }
+
+        }
+
+        .about {
+            color: $whitecolor;
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+
+    .name h1::before {
+        content: "Shruthi ";
+        font-weight: 300;
+    }
+
+
+
+    .about span::after {
+        content: "product";
+        color: $bluecolor;
+    }
+}
+
+
+/*main*/
+
+main {
+    h4 {
+        color: $whitecolor;
+        text-align: center;
+    }
+
+    margin: 0 15%;
+}
+
+.display {
+    .row {
+        @include flexProperty;
+
+        /*product*/
+        .product {
+            flex-basis: 33%;
+            padding: 10px 10px;
+        }
+    }
+
+    margin-bottom: 110px;
+}
+
+
+.quotes {
+    color: $greycolor;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.quotes p::after {
+    content: " show off";
+    color: $greencolor;
+}
+
+.logos {
+    @include flexProperty;
+    margin-bottom: 150px;
+    align-items: center;
+
+    .logo-icon {
+        flex-basis: 16%;
+        padding: 20px 40px;
+    }
+}
+
+
+.lines {
+    @include flexProperty;
+    justify-content: center;
+    margin-bottom: 25px;
+
+    .short-line {
+        border: 0.1px solid $whitecolor;
+        width: 30px;
+        margin-right: 25px;
+    }
+
+    .long-line {
+        border: 0.1px solid $whitecolor;
+        width: 105px;
+    }
+
+}
+
+.social-media {
+    @include flexProperty;
+    color: $whitecolor;
+    justify-content: center;
+    padding: 50px 0px;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+
+    .social-icon {
+        border: 1px solid $whitecolor;
+        border-radius: 50%;
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+
+        i {
+            font-size: 23px;
+            padding: 7px 4px 5px 10px;
+        }
+    }
+
+}
+
+.tag-line {
+    text-align: center;
+    color: $whitecolor;
+    font-size: 25px;
+    margin-bottom: 130px;
+}
+
+/*media query*/
+@media only screen and (max-width: 800px) {
+    .display {
+        .row {
+            .product {
+                flex-basis: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+    .quotes {
+        font-size: 28px;
+    }
+
+    .logos {
+        .logo-icon {
+            flex-basis: 50%;
+        }
+
+    }
+
+    header {
+        flex-flow: column-reverse;
+        margin-top: 100px;
+        margin-bottom: -60px;
+
+        div {
+            .name {
+                font-size: 28px;
+                margin: 0;
+                padding-bottom: 5px;
+            }
+
+            .about {
+                font-size: 26px;
+                padding-bottom: 5px;
+            }
+        }
+
+        .mail-id {
+            justify-content: center;
+            font-size: 22px;
+        }
+    }
+}
