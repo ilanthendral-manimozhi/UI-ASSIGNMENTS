@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"> <img src="assets/Sirius_CDW_Cobranded_PMS2747.svg" alt="logo" /></div>
+    </header>
+    <main>
+        <form name="f1" >
+            <div class="whole">
+                <h2 class="detail">BILLING DETAILS</h2>
+                <div class="col-left">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname-highlight" name="fname" />
+                    <div id="error-fname"></div>
+                </div>
+                <div class="col-right">
+                    <label for="fname">Last Name</label>
+                    <input type="text" id="lname-highlight" name="lname" />
+                    <div id="error-lname"></div>
+                </div>
+                <div class="row">
+                    <label for="fname">Email</label>
+                    <input type="text" id="email-highlight" name="email" />
+                    <div id="error-email"></div>
+                </div>
+                <div class="row">
+                    <label for="fname">Contact Number</label>
+                    <input type="text" id="mobile-highlight"  name="mobile" />
+                    <div id="error-mobile"></div>
+                </div>
+                <div class="row">
+                    <label for="fname">PIN Code</label>
+                    <input type="text" id="pincode-highlight" name="pincode" />
+                    <div id="error-pincode"></div>
+                </div>
+                <div class="row">
+                    <h2 class="detail">PAYMENT DETAILS</h2>
+                    <label for="fname">Card Number</label>
+                    <input type="text" id="card-highlight" name="cardnumber" />
+                    <div id="error-card"></div>
+                </div>
+                <div class="col-left">
+                    <label for="fname">Card Expiry</label>
+                    <input type="text" id="expiry-highlight" name="expiry" />
+                    <div id="error-expiry"></div>
+                </div>
+                <div class="col-right">
+                    <label for="fname">CVV</label>
+                    <input type="text" id="error-highlight" name="cvv" />
+                    <div id="error-cvv"></div>
+                </div>
+                <div class="row">
+                   <button id="complete-pay">COMPLETE</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="JS/script.js">
+    </script>
+</body>
+
+</html>
